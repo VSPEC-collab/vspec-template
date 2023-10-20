@@ -41,3 +41,10 @@ Documentation
 
 Documentation is located in the ``docs`` directory and should be
 built using ``sphinx``.
+
+Navigate to the ``docs`` directory and issue the command
+
+.. code:: bash
+    sphinx-quickstart
+
+The ``numpydoc`` sphinx extension will be needed, among other extensions.
