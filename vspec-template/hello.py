@@ -30,9 +30,41 @@ def _hello():
 
 def hello():
     """
-    Say "Hello, world!"
+    Hello world! function.
     
-    Prints "Hello, world!" to the screen.
-        
+
+    Returns
+    -------
+    str
+        A string that says "Hello, world!"
     """
-    print(_hello())
+    return _hello()
+
+def add(a:float,b:float)->float:
+    """
+    Adds two float numbers together and returns the sum.
+
+    Parameters
+    ----------
+    a : float
+        The first number to be added.
+    b : float
+        The second number to be added.
+
+    Returns
+    -------
+    float
+        The sum of the two input numbers.
+
+    Raises
+    ------
+    TypeError
+        If either `a` or `b` is not of type float.
+    """
+    if not isinstance(a,float):
+        msg = "a must be a float"
+        raise TypeError(msg)
+    if not isinstance(b,float):
+        msg = "b must be a float"
+        raise TypeError(msg)
+    return a + b
