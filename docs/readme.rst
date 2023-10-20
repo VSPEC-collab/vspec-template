@@ -8,7 +8,7 @@ Copying
 
 Use this template to create your own repository. Make sure to edit
 all necessary files including ``setup.py``, and change the name of
-the ``vspec-template`` directory to match the name of your package.
+the ``vspec_template`` directory to match the name of your package.
 
 Installation
 ------------
