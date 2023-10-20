@@ -17,7 +17,6 @@ To install this (or your copy) locally, first clone the repository.
 Then navigate to the directory containting ``setup.py`` and 
 type
 
-.. code:: bash
     pip install -e .
 
 This will install the package locally in development mode.
@@ -44,7 +43,6 @@ built using ``sphinx``.
 
 Navigate to the ``docs`` directory and issue the command
 
-.. code:: bash
     sphinx-quickstart
 
 The ``numpydoc`` sphinx extension will be needed, among other extensions.
