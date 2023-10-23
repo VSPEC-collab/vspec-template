@@ -9,10 +9,11 @@ For info on writing numpydoc style docstrings, see:
 https://numpydoc.readthedocs.io/en/latest/format.html
 """
 
+
 def _hello():
     """
     Private function to say "Hello, world!"
-    
+
     Private functions like this do not show up in the documentation,
     but they can still be documented for internal use.
 
@@ -20,7 +21,7 @@ def _hello():
     -------
     str
         A string to say "Hello, world!"
-        
+
     Notes
     -----
     This is an example of 
@@ -28,10 +29,11 @@ def _hello():
     """
     return "Hello, world!"
 
+
 def hello():
     """
     Hello world! function.
-    
+
 
     Returns
     -------
@@ -40,7 +42,8 @@ def hello():
     """
     return _hello()
 
-def add(a:float,b:float)->float:
+
+def add(a: float, b: float) -> float:
     """
     Adds two float numbers together and returns the sum.
 
@@ -61,10 +64,10 @@ def add(a:float,b:float)->float:
     TypeError
         If either `a` or `b` is not of type float.
     """
-    if not isinstance(a,float):
+    if not isinstance(a, float):
         msg = "a must be a float"
         raise TypeError(msg)
-    if not isinstance(b,float):
+    if not isinstance(b, float):
         msg = "b must be a float"
         raise TypeError(msg)
     return a + b
